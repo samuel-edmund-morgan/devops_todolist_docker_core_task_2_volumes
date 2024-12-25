@@ -9,7 +9,7 @@
 
 2. Run the MySQL container with a volume attached:
     ```sh
-    docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=app_db -e MYSQL_USER=app_user -e MYSQL_PASSWORD=1234 -v mysql_data:/var/lib/mysql -p 3306:3306 mysql-local:1.0.0
+    docker run -d --name mysql-container -v mysql_data:/var/lib/mysql -p 3306:3306 mysql-local:1.0.0
     ```
 
 ## Running the Django Application Container
